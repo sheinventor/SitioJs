@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto DJI Mic 2 - Estuche 3D</title>
+    <!-- Ruta absoluta para el archivo CSS -->
+    <link rel="stylesheet" href="/style.css">  <!-- Ruta absoluta a style.css -->
+    <!-- Ruta absoluta para el archivo JavaScript -->
+    <script defer src="/script.js"></script>   <!-- Ruta absoluta a script.js -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+    <div id="navbar-container"></div>
+      <h1>Étui imprimé en 3D pour DJI Mic 2</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#intro">Introducción</a></li>
+        <li><a href="#materials">Materiales</a></li>
+        <li><a href="#steps">Fabricación</a></li>
+        <li><a href="#customization">Personalización</a></li>
+        <li><a href="#cad-files">Archivos CAD</a></li>
+        <li><a href="#comments">Comentarios</a></li>
+      </ul>
+    </nav>
+
+    
+  </header>
+
+  <!-- Introducción -->
+  <section id="intro">
+    <h2>📖 Introducción</h2>
+    <p>Ce projet consiste en un étui imprimé en 3D pour le microphone DJI Mic 2 (Shadow Black), transformant ce dernier en un microphone portable idéal pour les interviews et les tournages en extérieur.</p>
+    <img src="../images/PDIY-Microphone/5.png" alt="DJI Mic 2 3D case" />
+  </section>
+
+  <!-- Materiales y Herramientas -->
+  <section id="materials">
+    <h2>🔧 Materiales, Outils et Machines</h2>
+    <ul>
+      <li><img src="../images/icons/magnet_icon.png" alt="Magnet"> Aimant 6mm x 3mm</li>
+      <li><img src="../images/icons/printer_icon.png" alt="Printer"> Imprimante 3D (PLA recommandé)</li>
+      <li><img src="../images/icons/slicer_icon.png" alt="Slicer"> OrcaSlicer</li>
+      <li><img src="../images/icons/glue_icon.png" alt="Glue"> Colle forte</li>
+      <li><img src="../images/icons/scissors_icon.png" alt="Scissors"> Ciseaux ou cutter</li>
+    </ul>
+  </section>
+
+  <!-- Etapas de Fabricación -->
+  <section id="steps">
+    <h2>🏗️ Étapes de Fabrication</h2>
+
+    <div>
+      <h3>1️⃣ Conception du Projet</h3>
+      <img src="../images/PDIY-Microphone/1.png" alt="Design en CAD" />
+      <p>Le design a été réalisé avec Tinkercad et OnShape.</p>
+    </div>
+
+    <div>
+      <h3>2️⃣ Impression 3D</h3>
+      <img src="../images/PDIY-Microphone/2.png" alt="Impression 3D" />
+      <p>Temps d’impression estimé : 6 heures. Remplissage recommandé : 15%</p>
+    </div>
+
+    <div>
+      <h3>3️⃣ Assemblage</h3>
+      <img src="../images/PDIY-Microphone/4.jpg" alt="Assemblage du microphone" />
+      <p>Assembler la partie supérieure avec la partie inférieure et fixer l’aimant.</p>
+    </div>
+
+    <h4>Descargar archivos STL:</h4>
+    <ul>
+      <li><a href="https://drive.google.com/drive/folders/1UTIPr3aVVn0135L0d1gQ1yUGxHgaB4Y-?usp=sharing">Télécharger le dossier complet</a></li>
+    </ul>
+  </section>
+
+  <!-- Personalización -->
+  <section id="customization">
+    <h2>🎨 Personnalisation</h2>
+    <p>Changez la couleur de l’étui avec différents filaments ou ajoutez un autocollant personnalisé.</p>
+    <img src="../images/customization_example.png" alt="Exemple de personnalisation" />
+  </section>
+
+  <!-- Archivos CAD y Descargas -->
+  <section id="cad-files">
+    <h2>📜 Schémas et Fichiers CAD</h2>
+    <p>Téléchargez tous les fichiers nécessaires pour réaliser ce projet.</p>
+    <a href="https://drive.google.com/drive/folders/1UTIPr3aVVn0135L0d1gQ1yUGxHgaB4Y-?usp=sharing">Télécharger le dossier complet</a>
+  </section>
+
+  <!-- Comentarios -->
+  <section id="comments">
+    <h2>💬 Commentaires</h2>
+    <p>Si vous avez des questions ou des suggestions, laissez un commentaire ci-dessous !</p>
+    <form>
+      <textarea placeholder="Votre commentaire..."></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Crédits: Conception 3D par SheInventor. Inspirations : Microphones de reportage traditionnels.</p>
+  </footer>
+  <script>        // Función para incluir la barra de navegación
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("../navbar.html") // Subimos un nivel para encontrar la barra
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-container").innerHTML = data;
+
+                // Reaplicar estilos si no se han cargado
+                let styles = document.createElement("link");
+                styles.rel = "stylesheet";
+                styles.href = "/styles.css"; // Ajusta la ruta si es necesario
+                document.head.appendChild(styles);
+            })
+            .catch(error => console.error("Error cargando la barra de navegación:", error));
+    });</script>
+
+</body>
+</html>
+
+
