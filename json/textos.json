@@ -1,0 +1,32 @@
+{
+    "proyectos": [
+      {
+        "nombre": "Proyecto 1",
+        "descripcion": "Descripción detallada del Proyecto 1. Explica los detalles del trabajo realizado, las tecnologías utilizadas, etc.",
+        "imagen": "projects/project1/0.jpg"
+      },
+      {
+        "nombre": "Proyecto 2",
+        "descripcion": "Descripción del Proyecto 2. Aquí puedes agregar los detalles sobre este proyecto.",
+        "imagen": "projects/project2/0.jpg"
+      },
+      {
+        "nombre": "Proyecto 3",
+        "descripcion": "Descripción del Proyecto 3. Este proyecto fue realizado para XYZ y tiene ciertas características interesantes.",
+        "imagen": "projects/project3/0.jpg"
+      }
+    ],
+    "comics": [
+        {
+            "nombre": "Cómic 1",
+            "carpeta": "comic1",
+            "descripcion": "Descripción del primer cómic"
+        },
+        {
+            "nombre": "Cómic 2",
+            "carpeta": "comic2",
+            "descripcion": "Descripción del segundo cómic"
+        }
+    ]
+  }
+  

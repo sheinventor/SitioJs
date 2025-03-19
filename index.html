@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheInventor - Creatividad e Innovación</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        /* Contenedor principal para centrar el formulario */
+        #contact-form-container {
+            display: flex;
+            justify-content: center;   /* Centra horizontalmente */
+            align-items: center;       /* Centra verticalmente */
+            height: 100vh;             /* Ocupa toda la altura de la ventana */
+            margin: 0;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 0px; /* Reduce el espacio debajo del título */
+        }
+
+        iframe {
+            width: 100%;               /* Ocupa todo el ancho del contenedor */
+            max-width: 1000px;          /* Tamaño máximo del iframe */
+            height:1000px;             /* Altura fija para el iframe */
+            border: none;              /* Elimina el borde del iframe */
+        }
+    </style>
+
+
+
+</head>
+    <body>
+
+    <!-- Barra de Navegación -->
+    <div id="navbar-container"></div>
+
+        <!-- Encabezado -->
+        <header>
+            <div class="container">
+                <h1>Bienvenue sur mon site web</h1>
+                <p>Explorez mes projets et mes comics récents</p>
+                <a href="#contact" class="cta-button">Contactez-moi</a>
+            </div>
+        </header>
+    
+        <!-- Galería de Proyectos -->
+        <section id="projets">
+            <h2>Mes Projets</h2>
+            <div class="gallery" id="gallery-projets"></div>
+        </section>
+    
+        <!-- Galería de Comics Recientes -->
+        <section id="comics">
+            <h2>Comics Récents</h2>
+            <div class="gallery" id="gallery-comics"></div>
+        </section>
+    
+        <section id="contact">
+            <h2 style="text-align: center;">Contactez-moi</h2>
+            <!-- Contenedor que centra el formulario -->
+            <div id="contact-form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeqQh6SSHlsVXgX9SprPsZPdVX-2ju5_4s8wfpDh7Nb1fMOMg/viewform?embedded=true" width="1000" height="1000" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+
+        </section>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
+</html>
